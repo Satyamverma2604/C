@@ -1,0 +1,77 @@
+1. Make a sum of number by using operator concept.
+-->   input as 65 output as 11.
+
+2.swap two number by using third variable.
+--> input as int a = 10 , b = 20;
+          output as  a = 20 , b = 10;
+ 
+3.swap two number without using third variable.
+--> input as int a = 10 , b = 20;
+     output as  a = 20 , b = 10;
+4. Round of the number to it's next multiplication  of 10.
+--> input as 36   -   output as 40
+    input as 77  -  output as 80
+5. Sum of two numbers
+--> input as int a = 10 , b = 20;
+   output as - 30
+   without using '+' operator.
+
+******************************Solution*****************************
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    scanf("%d", &a);
+    int sum = 0;
+    int lastDigit = a %10;
+    sum = sum + lastDigit;
+    a /= 10;
+     lastDigit = a %10;
+    sum = sum + lastDigit;
+    printf("The sum is %d ", sum);
+    return 0;
+}
+
+#include<stdio.h> 
+void main(){
+    int a = 10 , b = 20;
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+    printf("the value of a is %d and the value of b is %d",a ,b);
+
+}
+
+#include<stdio.h>
+void main(){
+    int a = 10, b = 20;
+    a = a+b;
+    b = a-b;
+    a = a-b;
+    printf("The value of a is %d and the value of b is %d", a,b);
+}
+
+
+#include<stdio.h>
+int main(){
+
+    int n,round;
+    printf("Enter a two digit integer: ");
+    scanf("%d",&n);
+    round = (n/10+1)*10;
+    printf("The round number is : %d",round);
+
+
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+
+    int a = 20 , b = 30;
+printf("The sum is : %d ", a - (-b));
+    return 0;
+}
