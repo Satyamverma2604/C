@@ -1,0 +1,214 @@
+Question 1.
+
+
+Employee Attendance Check
+A company decides to reward employees with a bonus if their monthly attendance is satisfactory. An employee is eligible for the bonus if their attendance percentage is greater than or equal to 75%.
+
+Given the total number of working days in a month and the number of days the employee was present, write a program to determine whether the employee is eligible for the bonus.
+
+Take two inputs: presentDays and totalDays.
+If attendance is >= 75%, employee is eligible for bonus.
+
+Input Format:
+------------------
+Take two inputs: presentDays and totalDays.
+If attendance is >= 75%, employee is eligible for bonus.
+
+
+Print "Eligible for bonus" if attendance percentage is ≥ 75%.
+
+Output Format:
+-------------------
+Print "Not eligible for bonus" if attendance percentage is < 75%.
+Sample Input
+20 16
+Sample Output
+Eligible for bonus
+Constraints:
+0 <= presentDays <= 1000
+
+1 <= totalDays <= 1000
+
+
+
+Question 2.
+
+
+Speeding Fine System
+A traffic monitoring system is used to calculate fines based on a vehicle's speed.
+
+The speed limit is set to 60 km/h.
+
+If a vehicle exceeds the speed limit, the following fines are applied:
+
+Speed > 60 and ≤ 80 → ₹100 fine
+
+Speed > 80 → ₹500 fine
+
+Speed ≤ 60 → No fine
+
+Given the speed of a vehicle, write a program to determine the appropriate fine.
+
+Input Format :
+A single integer speed — the speed of the vehicle in km/h.
+
+Output Format :
+
+"₹100" if speed is more than 60 and up to 80.
+"₹500" if speed is more than 80.
+"No fine" if speed is 60 or less.
+Sample Input
+65
+Sample Output
+100
+Constraints:
+0 ≤ speed ≤ 300
+Explanation
+Explanation: Input: 65 Since 65 > 60 and ≤ 80 → Fine is ₹100 Input: 85 Since 85 > 80 → Fine is ₹500 Input: 50 Since 50 ≤ 60 → No fine
+
+
+
+
+Question 3. 
+
+
+Uppercase to Lowercase
+Write a c program to determine if a character is uppercase or lowercase using the ternary operator.
+Sample Input
+A
+Sample Output
+A is an uppercase letter.
+
+
+
+Question 4. 
+
+
+LEAP_YEAR_PROGRAM
+Develop a program to check whether a given year is a leap year or not, using logical operators and the ternary operator. 
+
+Leap Year Rule:
+----------------------
+A year is a leap year if it satisfies:
+
+Divisible by 4 AND not divisible by 100,
+OR
+Divisible by 400
+Sample Input
+2020
+Sample Output
+Leap Year
+Constraints:
+An integer value representing the year (e.g., 2020)
+Leap Year or Not a Leap Year
+Explanation
+Leap Year Rules Explained: Divisible by 4 → Leap Year Most years that are divisible by 4 are leap years. Example: 2016, 2020, 2024 Except Century Years (ending in 00) → Must also be divisible by 400 Century years (like 1900, 2000, 2100) are only leap years if divisible by 400. Reason: To correct the over-adjustment caused by adding a leap day every 4 years (which slightly overcompensates for the actual solar year).
+
+
+Question 5.
+
+Mobile Recharge Plan
+A telecom company offers three different monthly data plans based on user data consumption. Your task is to write a program that suggests the correct plan based on the user's monthly data usage (in GB).
+
+The plan selection rules are:
+
+If usage is less than 2 GB → Plan A: ₹199/month
+
+If usage is 2 GB to less than 10 GB → Plan B: ₹399/month
+
+If usage is 10 GB or more → Plan C: ₹599/month
+
+You must use the ternary operator to determine and display the recommended plan and its cost.
+
+ Input Format :
+A single integer usage — the user's monthly data usage in GB.
+
+Output Format :
+Print the recommended plan in the format:
+"Plan A - ₹199"
+"Plan B - ₹399"
+"Plan C - ₹599"
+Sample Input
+1
+Sample Output
+Plan A - RS. 199
+Constraints:
+0 ≤ usage ≤ 100
+Explanation
+Input: 1 1 GB < 2 GB → Plan A is recommended Input: 5 5 GB falls between 2 and 10 → Plan B is recommended Input: 15 15 GB is ≥ 10 GB → Plan C is recommended
+
+
+
+
+***********************************************Solution******************************************************
+
+
+Question 1.
+
+#include<stdio.h>
+int main(){
+
+    int persentDays, totalDays;
+    scanf("%d %d",&totalDays, &persentDays);    
+   persentDays >=  (float)(totalDays*75)/100 ? printf("Eligible for bonus") : printf("Not eligible for bonus");
+
+    return 0;
+
+}
+
+Question 2.
+
+
+#include<stdio.h>
+int main(){
+
+    int speed;
+    scanf("%d",&speed);
+
+    (speed > 80) ? printf("%d",500) : (speed <= 80) && (speed > 60) ? printf("%d",100) : printf("No Fine");
+
+    return 0;
+}
+
+Question 3.
+
+
+#include<stdio.h>
+int main(){
+
+    char ch;
+    scanf("%c", &ch);
+
+    (ch>=65) && (ch<=90) ? printf("%c is an uppercase letter.",ch) : (ch >= 90) && (ch <= 122) ? printf("%c is a lowercase letter.",ch) : printf("Enter a valid Alphabate.");
+
+    return 0;
+}
+
+
+
+Question 4.
+
+#include<stdio.h>
+int main(){
+
+
+    int year;
+    scanf("%d",&year);
+    (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) ? printf("Leap Year") : printf("Not a Leap Year");
+
+    return 0;
+}
+
+Question 5.
+
+
+#include<stdio.h>
+int main(){
+
+    int dataConsumption;
+    scanf("%d",&dataConsumption);
+
+    (dataConsumption < 2) ? printf("Plan A - RS. 199") : (dataConsumption >= 2) && (dataConsumption < 10 ) ? printf("Plan B - RS. 399") : printf("Plan C - RS. 599"); 
+
+    return 0;
+}
