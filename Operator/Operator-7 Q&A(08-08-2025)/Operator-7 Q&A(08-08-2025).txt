@@ -1,0 +1,91 @@
+Ques - 1
+-----------------
+Write a C program using the ternary operator to calculate the electricity bill for a given number of units consumed by a customer.
+For the first 100 units, the rate is Rs. 3.00 per unit.
+For any additional units beyond 100, the rate is Rs. 4.50 per unit.
+
+Example 1: Units consumed less than or equal to 100
+Sample Input: units consumed : 75
+Sample Output: The total electricity bill is: Rs. 225.00
+        
+Example 2: Units consumed more than 100
+Sample Input: units consumed: 150
+Sample Output: The total electricity bill is: Rs. 525.00
+        
+Example 3: Units consumed exactly 0
+Sample Input: units consumed: 0
+Sample Output: The total electricity bill is: Rs. 0.00
+
+Ques - 2
+----------------
+Write a program to create a simple calculator using the ternary operator. 
+The program should perform addition, subtraction, multiplication, and division based on user input.
+
+input : 
+	Enter first number : 10
+	Enter second number : 20
+	Enter operator(+,-,/,*,%) : +
+output :
+	Addition is : 30
+
+Ques - 3
+---------------
+Write a program that calculates the grade of a student based on the marks entered by the user. Use the conditional (ternary) operator to determine the grade:
+
+90 and above: Grade A
+80-89: Grade B
+70-79: Grade C
+60-69: Grade D
+Below 60: Grade F
+
+
+
+
+*************************************Solution**************************************
+
+Question 1.
+
+#include<stdio.h>
+int main(){
+
+    int unit; float bill;
+    printf("Enter the consumed unit: ");
+    scanf("%d",&unit);
+    (unit <= 100) ? printf("The total electricity bill is: Rs. %.2f", bill = unit*3.00) : printf("The total elecricity bill is: Rs. %.2f", (bill = 100*3.00)+((unit-100)*4.50));
+
+    return 0;
+}
+
+
+Question 2.
+
+#include<stdio.h>
+int main(){
+
+int a,b;
+char ch;
+printf("Enter first number: ");
+scanf("%d",&a);
+printf("Enter second number: ");
+scanf("%d",&b);
+printf("Enter operator number: ");
+scanf(" %c",&ch);
+(ch == '+') ? printf("Addition is : %d",a+b) : (ch == '-') ? printf("Substraction is : %d", a-b) : (ch == '*') ? printf("Multiplication is : %d", a*b) : printf("Division is : %d", a/b);
+
+}
+
+
+Question 3.
+
+#include<stdio.h>
+int main(){
+
+    int marks;
+    printf("Enter the marks: ");
+    scanf("%d",&marks);
+
+    (marks >= 90) ? printf("Grade A") : (marks >= 80) && (marks <= 89) ? printf("Grade B") : (marks >= 70) && (marks <= 79) ? printf("Grade C") : (marks >= 60) && (marks <= 69) ? printf("Grade D") : printf("Grade F");
+    
+
+    return 0;
+}
