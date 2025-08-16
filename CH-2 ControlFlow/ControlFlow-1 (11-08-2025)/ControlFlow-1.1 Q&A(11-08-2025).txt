@@ -1,0 +1,92 @@
+Q-1:
+Write a C program that takes an integer from the user and prints its absolute value without using the abs() function.
+
+Example:
+Input: -45  
+Output: 45  
+
+Input: 87  
+Output: 87  
+
+Q-2:
+Write a C program that takes a withdrawal amount from the user and checks if it is a multiple of 100 before processing. If it is not a multiple of 100, display "Invalid amount".
+
+Example:
+Input: 2500  
+Output: Valid amount  
+
+Input: 1230  
+Output: Invalid amount  
+
+Q-3:
+Write a C program to check if an entered character is an alphabet or not an alphabet.
+
+Example:
+Input: A  
+Output: Alphabet  
+
+Input: @  
+Output: Not Alphabet  
+
+Q-4:
+Write a C program to check if an entered character is a digit or not a digit.
+
+Example:
+Input: 9  
+Output: Digit  
+
+Input: b  
+Output: Not Digit 
+ 
+Q-5:
+Write a C program that takes a two digit number from the user and checks whether the sum of its digits is even.
+
+Example:
+Input: 24  
+Output: Sum of digits is even  
+
+Input: 12 
+Output: Sum of digits is odd  
+
+
+Q-6:
+Write a C program to check whether the last digit of a number is 5.
+
+Example:
+Input: 125  
+Output: Last digit is 5  
+
+Input: 82  
+Output: Last digit is not 5  
+
+Q-7:
+Write a C program that takes a day number (1 to 7) as input and checks whether it is a weekday or weekend.
+Assumptions:
+
+1 = Monday
+2 = Tuesday
+3 = Wednesday
+4 = Thursday
+5 = Friday
+6 = Saturday
+7 = Sunday
+
+Rules:
+
+Output "Weekday" for 1 to 5
+Output "Weekend" for 6 and 7
+
+If the input is outside 1–7, display "Invalid day number"
+
+Examples:
+Input: 3  
+Output: Weekday  
+
+Input: 6  
+Output: Weekend  
+
+Input: 9  
+Output: Invalid day number  
+
+Input: 1  
+Output: Weekday  

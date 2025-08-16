@@ -1,0 +1,130 @@
+Question 1.
+
+
+Question: Check_Three_Digit
+Problem Statement
+
+Write a C program to check whether a given number is a three-digit number or not.
+
+You are not allowed to use any control flow statements (if, else, switch, loops) or ternary operators.
+
+Input Format
+
+A single integer input.
+
+Output Format
+
+Print "It is a 3-digit number" if the input number is three digits.
+
+Otherwise, print "It is not a 3-digit number".
+
+Examples
+
+Input: 123
+Output: It is a 3-digit number
+
+Input: 45
+Output: It is not a 3-digit number
+
+Input: 1000
+Output: It is not a 3-digit number
+
+Input: -567
+Output: It is a 3-digit number
+
+
+
+Question 2.
+
+
+
+
+Question: Check_Even_Odd
+Problem Statement
+
+Write a C program to check whether a given number is even or odd.
+
+You are not allowed to use any control flow statements (if, else, switch, loops) or ternary operators.
+
+Input Format
+
+A single integer input.
+
+Output Format
+
+Print "Even" if the number is even.
+
+Print "Odd" if the number is odd.
+
+Examples
+
+Input: 10
+Output: Even
+
+Input: 7
+Output: Odd
+
+Input: -4
+Output: Even
+
+Input: -9
+Output: Odd
+
+
+
+
+Question 3.
+
+Question: Next_Tens_Multiple (Two-Digit Number)
+Problem Statement
+
+Write a C program that takes a two-digit integer input and checks its first digit.
+
+If the first digit is greater than or equal to 5, print the next 10’s multiple of the number.
+
+Otherwise, print the previous 10’s multiple of the number.
+
+Note: You are not allowed to use any control flow statements (if, else, switch, loops) or ternary operators.
+
+Input Format
+
+A single two-digit integer input.
+
+Output Format
+
+Print the required 10’s multiple according to the condition.
+
+Examples
+
+Input: 23
+Output: 20
+
+Input: 47
+Output: 50
+
+Input: 59
+Output: 60
+
+Input: 81
+Output: 90
+
+
+
+****************************************************Solution****************************************************
+
+
+Question 3.
+
+
+#include<stdio.h>
+int main(){
+
+	int n,lastD;
+	scanf("%d",&n);
+	
+	lastD = n%10;
+((lastD>=5) && printf("The next 10s multiple is : %d",(n/10+1)*10)) || printf("The previous 10s multiple is : %d",(n/10)*10);
+
+   return 0;
+
+}
