@@ -1,0 +1,192 @@
+Question 1.
+
+
+OddEvenByUsingSwitch
+Write a C program to check the number is even or odd by using Switch Case.
+Sample Input
+10
+Sample Output
+Even
+
+
+Question 2.
+
+VowelOrConsonantUsingSwitch
+Write a C program to check whether a Alphabet is vowel or consonant using Switch Case.
+Sample Input
+a
+Sample Output
+Vowel
+
+
+Question 3.
+
+
+Calculate the Day of the Week
+[Title:- Calculate the Day of the Week]
+----------------------------------------
+Write a program that takes a number (1-7) as input and prints the day of the week using a switch statement. If the number is outside this range, display an error message.
+
+Test Case-1 :-
+--------------
+Input :- 1
+--------
+
+Output :- "Monday" (Valid)
+----------
+
+Test Case-2 :-
+--------------
+Input :- 7
+--------
+
+Output :- "Sunday" (Valid)
+---------
+
+Test Case-3 :-
+--------------
+Input :- 0/-1
+--------
+
+Output :- "Invalid day number. Enter a number between 1 and 7." (Invalid)
+---------
+Sample Input
+1
+Sample Output
+Monday
+Explanation
+Use switch case's
+
+
+Question 4.
+
+
+AirthmaticOperationUsingSwitch
+Write a C program to do a arithmetic operation on two numbers by using Switch Case. Take the operators(+,-,*,/,%) as cases and take the input from the user that what kind of operation user want to do on two number.
+
+
+
+Input as: 
+
+------------
+
+Enter num1 :10
+
+Enter num2 :20
+
+Enter operation : *
+
+
+
+O/P as :
+
+---------
+
+Multiplication is :200
+Sample Input
+10
+20
+*
+Sample Output
+Multiplication is: 200
+
+******************************************Solution**********************************************
+
+Question 1.
+
+#include<stdio.h>
+int main(){
+
+    int n;
+    scanf("%d",&n);
+
+    switch(n%2 == 0){
+
+        case 0: printf("Odd"); break;
+        case 1: printf("Even");
+
+    }
+    return 0;
+}
+
+
+
+Question 2.
+
+
+#include<stdio.h>
+
+int main() {
+
+    char ch;
+    int ans;
+    scanf("%c",&ch);
+
+    ans = ch == 'a' || ch == 'e' ||ch == 'i' ||ch == 'o' ||ch == 'u' ||ch == 'A' ||ch == 'E' ||ch == 'I' ||ch == 'O' ||ch == 'U' ? 0 : (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') ? 1 : 2;
+
+    switch(ans){
+
+        case 0: printf("Vowel"); break;
+
+        case 1: printf("Consonant"); break;
+
+        default : printf("Invalid input");
+    }
+
+    return 0;
+}
+
+
+
+Question 3.
+
+#include<stdio.h>
+int main(){
+
+    int n;
+    scanf("%d",&n);
+
+    switch(n){
+        
+        case 1: printf("Monday"); break;
+        case 2: printf("Tuesday"); break;
+        case 3: printf("Wednesday"); break;
+        case 4: printf("Thrusday"); break;
+        case 5: printf("Friday"); break;
+        case 6: printf("Saturday"); break;
+        case 7: printf("Sunday"); break;
+
+        default : printf("Invalid input! Please enter a number between 1 and 7.");
+
+    }
+
+
+    return  0;
+}
+
+
+
+Question 4.
+
+
+#include<stdio.h>
+int main(){
+
+    int a,b;
+    char ch;
+    scanf("%d %d %c",&a,&b,&ch);
+
+    switch(ch){
+
+        case '+': printf("Addition is: %d",a+b); break;
+        case '-': printf("Subtraction is: %d",a-b); break;
+        case '*': printf("Multiplication is: %d",a*b); break;
+        case '/': printf("Division is: %d",a/b); break;
+        case '%': printf("Modulus is: %d",a%b); break;
+
+        default : printf("Enter a valid operator");
+
+    }
+
+    return 0;
+}
