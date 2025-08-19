@@ -1,0 +1,281 @@
+Question 1.
+
+CalculateGrades
+
+[Title:- Determine Student Grade Based on Total Marks] 
+-------------------------------------------------------
+Write a program that takes the marks of five subjects as input (each subject mark should be between 0 and 100). The program should:
+
+Check if all marks are within the range of 0–100. If any marks are invalid, display an error message and exit.
+If any subject mark is below 35, directly display "Fail" without calculating the total or grade.
+Otherwise, calculate the total marks, percentage, and determine the grade using the following criteria:
+
+-> 90%–100%: Grade A
+-> 75%–89%: Grade B
+-> 50%–74%: Grade C
+-> 35%–49%: Grade D
+-> Below 35%: Fail
+
+Test Cases-1 :-
+---------------
+Input:
+------
+Subject 1: 95
+Subject 2: 89
+Subject 3: 88
+Subject 4: 92
+Subject 5: 91
+
+Output:
+-------
+Total Marks: 455
+Percentage: 91.0%
+Grade: A (Valid)
+
+Test Cases-2 :-
+---------------
+Input:
+------
+Subject 1: 85
+Subject 2: 90
+Subject 3: 110
+Subject 4: 88
+Subject 5: 92
+
+Output:
+-------
+"Invalid input. Marks for each subject must be between 0 and 100." (Invalid)
+
+Test Cases-3 :-
+----------------
+Input:
+------
+Subject 1: 20
+Subject 2: 25
+Subject 3: 30
+Subject 4: 35
+Subject 5: 40
+
+Output:
+--------
+"Fail" (Valid)
+
+Test Cases-4 :-
+----------------
+Input:
+------
+Subject 1: 40
+Subject 2: 50
+Subject 3: 34
+Subject 4: 60
+Subject 5: 70
+
+Output:
+--------
+"Fail" (Valid - One subject is below 35)
+
+
+Question 2.
+
+Check Upper/Lower Case
+Write a c program to check the given character is in uppercase or lowercase by using switch case.
+Sample Input
+Sample Input :
+Enter Character : A
+Sample Output
+Sample Output :UpperCase
+
+
+
+Question 3.
+
+
+FindMaxBetweenTwo
+Write a C program to find the maximum between two numbers using Switch statement.
+Sample Input
+10
+20
+Sample Output
+20
+
+
+Question 4.
+
+
+DaysInAMonth
+[Title: Determine the Number of Days in a Month Based on User Input]
+--------------------------------------------------------------------
+
+Problem Statement :-
+--------------------
+Write a C program that takes a month number (1-12) as input from the user and prints the number of days in that month using a switch statement. If the user enters a number outside the range of 1-12, the program should display an error message.
+
+Explanation :-
+--------------
+-> Use a switch statement to handle different cases for each month:
+-> For months with 31 days (January, March, May, July, August, October, December), display "31 days".
+-> For months with 30 days (April, June, September, November), display "30 days".
+-> For February (month 2), print "28 or 29 days (depending on leap year)" (Leap years are not considered in this basic program).
+-> For any invalid month number (not between 1 and 12), print "Invalid month number".
+
+Program Logic :-
+----------------
+Prompt the user to enter the month number (1-12).
+Use a switch statement to check the month number and print the corresponding number of days.
+If the input is invalid (not between 1 and 12), print an error message.
+
+Test Case 1 :- [Valid Month with 31 Days]
+--------------
+Input :-
+---------
+Enter Month: 1
+
+Output :-
+---------
+31 days
+
+Test Case 2 :- [Valid Month with 30 Days]
+--------------
+Input :-
+--------
+Enter Month: 4
+
+Output :-
+----------
+30 days
+
+Test Case 3 :- [Invalid Month (Greater than 12)]
+--------------
+Input :-
+--------
+Enter Month: 13
+
+Output :-
+---------
+Invalid month number
+
+Test Case 4 :- [February (28 or 29 days)]
+--------------
+Input :-
+---------
+Enter Month: 2
+
+Output :-
+---------
+28 or 29 days (depending on leap year)
+
+Test Case 5 :- Invalid Month (Less than 1)
+--------------
+Input :-
+--------
+Enter Month: 0/-2[-ve/+ve]
+
+Output :-
+----------
+Invalid month number
+Sample Input
+4
+Sample Output
+30 Days
+
+
+***************************************************************Solution****************************************************
+
+Question 1.
+
+#include<stdio.h>
+int main(){
+
+    int a,b,c,d,e,total;float percentage;
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    if((a<0 && a>100) && (b<0 && b>100) && (c<0 && c>100) && (d<0 && d>100) && (e<0 && e>100) )
+    printf("(Invalid!)Marks for each subject must be between 0 and 100.");
+    else if(a>=35 && b>=35 && c>=35 && d>=35 && e>=35 ){
+        printf("Total Marks: %d\n",total = (a+b+c+d+e));
+        printf("Percentage: %.2f%%\n",percentage = total/(float)5);
+        if(percentage>=90)
+            printf("Grade: A");
+        else if(percentage >= 75)
+            printf("Grade: B");
+        else if(percentage >= 50)
+            printf("Grade: C");
+        else
+        printf("Grade D");
+    }else{
+        printf("Fail");
+    }
+
+
+    return 0;
+}
+
+
+
+
+Question 2.
+
+#include<stdio.h>
+int main(){
+
+    char ch;
+    scanf("%c",&ch);
+ 
+
+    switch((ch>='a'&&ch<='z') ? 0 :(ch>='A'&&ch<='B') ? 1: 2){
+
+        case 0: printf("LowerCase"); break;
+        
+        case 1: printf("UpperCase"); break;
+
+        case 2: printf("Not a Alphabate");
+    }
+
+    return 0;
+}
+
+
+
+Question 3.
+
+
+#include<stdio.h>
+int main(){
+
+    int a,b;
+    scanf("%d %d",&a,&b);
+
+    switch(a>b){
+        case 0: printf("%d",b); break;
+
+        case 1: printf("%d",a);
+    }
+
+
+    return 0;
+}
+
+
+
+Question 4.
+
+
+#include<stdio.h>
+int main(){
+
+    int month;
+    scanf("%d",&month);
+
+    switch(month){
+
+        case 2: printf("28 or 29 days (depending on leap year)"); break;
+
+        case 1: case 3: case 5: case 7: case 8: case 10: case 12: printf("31 days"); break;
+
+        case 4: case 6: case 9: case 11: printf("30 days"); break;
+
+        default : printf("Invalid month number");
+
+    }
+
+    return 0;
+}
