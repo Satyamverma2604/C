@@ -1,0 +1,361 @@
+Q1.   Consider the following code:
+
+#include <stdio.h>
+int main() {
+int num = 20;
+switch (printf("%d", num)) {
+case 1: printf(" Case 1");
+break;
+case 2: printf(" Case 2");
+break;
+default: printf(" Default case");
+}
+return 0;
+}
+
+What will be the output of the program?
+--
+
+ a) 2 Case 1
+
+
+ b) 2 Case 2
+
+
+ c) 2 Default case
+
+
+ d) Compile-time error
+
+
+Q2.   In the SWITCH-CASE statement the default case must be used?
+
+ TRUE
+
+ -
+
+ FALSE
+
+ -
+
+
+Q3.   Can a switch statement work with floating-point values in C?
+
+ a) Yes
+
+
+ b) No
+
+
+ c) Only with float
+
+
+ d) Only with double
+
+
+Q4.   How many 'default' cases can a 'switch' statement have in C?
+
+ One
+
+ Two
+
+ As many as needed
+
+ Zero
+
+Q5.   What will be the output of the program?
+
+
+#include <stdio.h>
+int main() {
+int num = 20;
+switch (printf("%d", num)) {
+case 1: printf(" Case 1");
+break;
+case 2: printf(" Case 2");
+break;
+default: printf(" Default case");
+}
+return 0;
+}
+
+ a) 2 Case 1
+
+
+ b) 2 Case 2
+
+
+ c) 2 Default case
+
+
+ d) Compile-time error
+
+
+Q6.   What will be the output of the following code?
+
+int x = 2;
+switch (x) {
+default: printf("Default");
+case 1: printf("One");
+case 2: printf("Two");
+case 3: printf("Three");
+}
+
+ a) One
+
+
+ b) TwoThreeDefault
+
+
+ c) TwoThree
+
+
+ d) Compile-time error
+
+Q7.   What is the output of C Program with Switch Statement.?
+int main()
+{
+
+int a=5;
+
+switch(a)
+{
+case 0: printf("0 ");
+case 3: printf("3 ");
+case 5: printf("5 ");
+default: printf("RABBIT ");
+}
+
+a=10;
+switch(a)
+{
+case 0: printf("0 ");
+case 3: printf("3 ");
+case 5: printf("5 ");
+default: printf("RABBIT "); break;
+}
+
+return 0;
+}
+
+ 5 RABBIT
+
+ 0 3 5 RABBIT 0 3 5 RABBIT
+
+ 0 3 5 RABBIT RABBIT
+
+ 5 RABBIT RABBIT
+
+
+
+Q8.   What is the output of C Program with switch statement or block.?
+int main()
+{
+int a;
+
+switch(a)
+{
+printf("APACHE ");
+}
+
+printf("HEROHONDA");
+}
+
+ APACHE HEROHONDA
+
+ HEROHONDA
+
+ No Output
+
+ Compiler error
+
+Q9.   What is the output of C Program with switch statement.?
+#include<stdio.h>
+int main()
+{
+char code='K';
+
+switch(code)
+{
+case 'A': printf("ANT ");break;
+case 'K': printf("KING "); break;
+default: printf("NOKING");
+}
+
+printf("PALACE");
+}
+
+ KING PALACE
+
+ KING NOTHING PALACE
+
+ ANT KING PALACE
+
+ Compiler error for using Non Integers as CASE constants.
+
+
+Q10.   Find the output of the below program?
+#include<stdio.h>
+int main()
+{
+int a = 66;
+const char ch = 'A',ch1 = 'B',ch3 = 'C';
+switch(a)
+{
+case ch1:
+printf("saturday");
+break;
+case ch:
+printf("sunday");
+break;
+default :
+printf("monday");
+}
+}
+
+ saturday
+
+ sunday
+
+ monday
+
+ Compile Time Error
+
+
+Q11.   What will be the output of the given C program?
+#include<stdio.h>
+int main()
+{
+int a = 2;
+int x= 2;
+int y = 1;
+switch(a)
+{
+case y:
+printf("Welcome");
+break;
+case x:
+printf("Know Program");
+break;
+default:
+printf("Hello");
+break;
+}
+return 0;
+}
+
+ Welcome
+
+ Know Program
+
+  Hello
+
+ Compile-time error
+
+
+Q12.   What is the output of C Program with switch statement.?
+int main()
+{
+int a=3;
+
+switch(a)
+{
+case 2: printf("ZERO "); break;
+
+case default: printf("RABBIT ");
+}
+}
+
+ RABBIT
+
+ ZERO RABBIT
+
+ No output
+
+ Compiler error
+
+
+Q13.   what will be the output of the program, If the input provided is 10?
+
+
+#include <stdio.h>
+int main() {
+int x;
+switch (scanf("%d", &x)) {
+case 0: printf("Case 0");
+break;
+case 1: printf("Case 1");
+break;
+default: printf("Default case");
+}
+return 0;
+}
+
+ a) Case 0
+
+
+ b) Case 1
+
+
+ c) Default case
+
+
+ d) Compile-time error
+
+
+Q14.   How can you break out of a switch case in C?
+
+ a) Using continue
+
+
+ b) Using return
+
+
+ c) Using break
+
+
+ d) Using exit()
+
+
+Q15.   What will be the output of the following code?
+----------------------------------------------
+int x = 2;
+switch (x) {
+default: printf("Default");
+case 1: printf("One");
+case 2: printf("Two");
+case 3: printf("Three");
+}
+
+ a) One
+
+
+ b) TwoThreeDefault
+
+
+ c) TwoThree
+
+
+ d) Compile-time error
+
+
+
+
+********************************Solution**********************
+
+
+1. 20 Case 2  
+2. FALSE  
+3. No  
+4. One  
+5. 20 Case 2  
+6. TwoThree  
+7. 5 RABBIT RABBIT  
+8. HEROHONDA  
+9. KING PALACE  
+10. saturday  
+11. Compile-time error  
+12. Compile-time error  
+13. Case 1  
+14. Using break  
+15. TwoThree  
