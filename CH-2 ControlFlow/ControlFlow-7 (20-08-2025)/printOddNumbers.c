@@ -1,0 +1,60 @@
+/*Question 1.
+Prints odd Numbers
+[Title:- Print Odd Numbers up to N]
+-----------------------------------
+Write a C program that takes an integer input N from the user and prints all odd numbers up to N using a while (true) loop. Ensure the program terminates if the user enters a negative value for N.
+
+Test Cases :-
+-------------
+
+Test-Case-1 :-
+--------------
+Input :- N = 10
+--------
+Output :- 1 3 5 7 9
+---------
+Explanation :- Prints all odd numbers from 1 to 10.
+--------------
+
+Test-Case-2 :-
+--------------
+Input :- N = -1
+--------
+Output :- Invalid input. Program terminated.
+---------
+Explanation :- Negative value entered; program exits.
+--------------
+
+Test-Case-3 :-
+--------------
+Input: N = 15
+Output: 1 3 5 7 9 11 13 15
+Explanation: Prints all odd numbers from 1 to 15.
+Sample Input
+15
+Sample Output
+1 3 5 7 9 11 13 15
+
+*/
+
+#include<stdio.h>
+int main(){
+
+    int n,start=1;
+    scanf("%d",&n);
+    if(n<0){
+        printf("Invalid input. Program terminated.");
+        return 0;
+    }
+
+    printf("Odd numbers up to %d:",n);
+    while(1){
+        if(start>n)
+        break;
+        printf(" %d",start);
+        start+=2;
+
+    }
+
+    return 0;
+}
