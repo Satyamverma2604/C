@@ -1,0 +1,283 @@
+Q1.   16)*. What is the range of values that can be used in a switch statement with char data type?
+
+ a) 0 to 255
+    
+
+ b) -128 to 127
+    
+
+ c) Depends on the compiler
+    
+
+
+ d) Both a and b are possible
+
+
+
+Q2.   13)*. Which statement about switch is FALSE?
+
+ a) Switch can be nested
+    
+
+ b) Switch is more efficient than if-else for multiple conditions
+    
+
+ c) Switch can handle string comparisons directly in C
+    
+
+ d) Switch generates jump tables for optimization
+
+Q3.   4)*. Which keyword is used to exit from a switch case?
+
+ a) exit
+   
+
+ b) break
+   
+
+ c) continue
+   
+
+
+ d) return
+
+Q4.   11)*. Can you use expressions in case labels?
+
+ a) Yes, any expression
+    
+
+ b) No, only constant expressions
+    
+
+ c) Yes, but only arithmetic expressions
+    
+
+
+ d) Yes, but only boolean expressions
+
+
+Q5.   17). Which of the following switch statements is valid?
+
+ a) switch(3.14) { case 3: break; }
+   
+
+  b) switch('A') { case 'A': break; }
+    
+
+ c) switch("hello") { case "hello": break; }
+    
+
+ d) switch(true) { case true: break; }
+
+
+Q6.   1)*. What is the correct syntax for a switch statement in C?
+
+ a) switch(variable) { case value: statements; }
+   
+
+ b) switch variable { case value: statements; }
+   
+
+ c) switch(variable) [ case value: statements; ]
+   
+
+ d) switch variable: { case value: statements; }
+
+Q7.   6)*. Can you use variables as case labels in a switch statement?
+
+  a) Yes, always
+   
+
+ b) No, only constants are allowed
+   
+
+ c) Yes, but only global variables
+   
+
+ d) Yes, but only local variables
+
+Q8.   5)*. What is the purpose of the default case in a switch statement?
+
+ a) It must be the first case
+   
+
+ b) It executes when no other case matches
+   
+
+ c) It's mandatory in every switch
+   
+
+ d) It handles compilation errors
+
+
+Q9.   14)*. What will happen if you use continue inside a switch case?
+
+ a) It will skip to the next case
+    
+
+ b) It will exit the switch
+    
+
+ c) Compilation error if not inside a loop
+    
+
+
+ d) It will restart the switch
+
+
+Q10.   8)*. Where can the default case be placed in a switch statement?
+
+ a) Only at the beginning
+   
+
+ b) Only at the end
+   
+
+ c) Anywhere within the switch block
+   
+
+ d) Only in the middle
+
+
+Q11.   19)*. Can goto statements be used to jump into a switch case from outside?
+
+ a) Yes, it's allowed and safe
+    
+
+ b) No, it's not allowed
+    
+
+ c) Yes, but it's undefined behavior
+    
+
+ d) Only with compiler flags
+
+Q12.   2)*. Which of the following data types can be used in a switch statement?
+
+ a) int, char
+   
+
+ b) float, double
+   
+
+ c) string
+  
+
+
+  d) Both a and b
+
+Q13.   10. What happens if two case labels have the same value?
+
+ a) The first one executes
+    
+
+ b) The last one executes
+    
+
+ c) Compilation error
+    
+
+ d) Runtime error
+
+Q14.   18)*. What happens if a switch statement has no default case and no case matches?
+
+ a) Compilation error
+    
+
+ b) Runtime error
+    
+
+ c) Program continues after the switch block
+    
+
+ d) Program terminates
+
+Q15.   9)*. Which of the following is NOT allowed in a switch statement?
+
+ a) Nested switch statements
+   
+
+ b) Multiple case labels for the same block
+   
+
+ c) Float values as case labels
+   
+
+ d) Empty cases
+
+Q16.   20. What is the maximum number of case labels allowed in a switch statement?
+
+ a) 256
+    
+
+ b) 1024
+    
+
+ c) Implementation dependent
+    
+
+
+ d) 65536
+
+
+
+Q17.   12)*. What is the correct way to handle multiple values for the same action?
+
+ a) case 1,2,3: printf("Multiple");
+    
+
+ b) case 1: case 2: case 3: printf("Multiple"); break;
+    
+
+ c) case 1|2|3: printf("Multiple");
+    
+
+
+ d) case 1&&2&&3: printf("Multiple");
+
+Q18.   7)*. What will be the output of this code?
+int x = 2;
+switch(x) {
+case 1: printf("One");
+case 2: printf("Two");
+case 3: printf("Three");
+}
+
+ a) Two
+   
+
+ b) TwoThree
+   
+
+ c) One
+   
+
+ d) Compilation error
+
+Q19.   3)*. What happens if you don't use a break statement in a case?
+
+ a) Compilation error
+   
+
+ b) Runtime error
+   
+
+ c) Fall-through to the next case
+   
+
+ d) Program terminates
+
+
+Q20.   15). Can you declare variables inside a case block?
+
+ a) No, never allowed
+    
+
+ b) Yes, but they must be initialized
+    
+
+ c) Yes, but the case block should be enclosed in braces
+    
+
+ d) Yes, without any restrictions
+

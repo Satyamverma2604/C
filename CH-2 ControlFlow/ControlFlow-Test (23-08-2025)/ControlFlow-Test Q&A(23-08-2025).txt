@@ -1,0 +1,339 @@
+Question 1.
+
+Banking_System_Menu
+Question 2: Banking System Menu
+Develop a simple banking menu system using switch statement for basic operations.
+
+Hints:
+- Menu options: 1-Check Balance, 2-Deposit, 3-Withdraw
+- Initialize balance to some value (e.g., 1000.0)
+- Display updated balance after each transaction
+Sample Input:
+Current Balance: 1000.0
+Choose operation: 2
+Enter deposit amount: 500.0
+
+Sample Output:
+Deposit successful!
+Updated Balance: 1500.0
+Sample Input
+1
+Sample Output
+Your current balance: ₹1000.00
+
+
+TestCase:
+
+case 1: 
+
+Input:
+1
+
+Expected Output:
+Current Balance: 1000.0
+
+case 2:
+
+Input:
+2 500
+
+Expected Output:
+Deposit successful!
+Updated Balance: 1500.0
+
+case 3:
+
+Input:
+3 300
+
+Expected Output:
+Withdrawal successful!
+Updated Balance: 700.0
+
+
+case 4:
+
+Input:
+3 2000
+
+Expected Output:
+Insufficient funds!
+
+
+
+Question 2.
+
+
+Simple_Calculator
+Create a calculator program that performs basic arithmetic operations (+, -, *, /, %) based on user input using switch statement.
+
+Hints:
+- Take two numbers and one operator as input
+- Display error message for invalid operators
+
+Sample Input:
+15.5 4.5  +
+
+Sample Output:
+15.5 + 4.5 = 20.0
+Sample Input
+15.5 4.5 +
+Sample Output
+15.5 + 4.5 = 20.0
+
+
+Tese cases:
+
+case 1:
+
+20 7.5 -
+
+Expected Output:
+20.0 - 7.5 = 12.5
+
+case 2:
+
+Input:
+15.5 4.5 +
+
+Expected Output:
+15.5 + 4.5 = 20.0
+
+case 3:
+
+Input:
+6 8 *
+
+Expected Output:
+6.0 * 8.0 = 48.0
+
+case 4:
+
+Input:
+15 3 /
+
+Expected Output:
+15.0 / 3.0 = 5.0
+
+
+Question 3.
+
+
+Vending_Machine_Simulator
+Question 3: Vending Machine Simulator
+Simulate a vending machine operation using switch statement for product selection and payment processing.
+
+Hints:
+- Products: 1-Soda(30₹), 2-Chips(15₹), 3-Candy(10₹), 4-Water(20₹)
+- Handle payment validation and change calculation
+- Track inventory for each product
+- Display transaction details and remaining change
+
+Sample Input:
+Select product: 2
+Insert money: 20
+
+Sample Output:
+Product: Chips - 15
+Payment: 20
+Change: 5
+Transaction successful! Enjoy your chips!
+Sample Input
+2
+20
+Sample Output
+Product: Chips - 15₹
+Payment: 20₹
+Change: 5₹
+
+
+TestCase:
+
+case 1:
+
+
+Input:
+2 20
+
+Expected Output:
+Product: Chips - 15₹
+Payment: 20₹
+Change: 5₹
+Transaction successful! Enjoy your Chips!
+
+
+case 2:
+
+Input:
+3 5
+
+Expected Output:
+Insufficient money! Transaction cancelled.
+
+
+case 3:
+
+Input:
+4 20
+
+Expected Output:
+Product: Water - 20₹
+Payment: 20₹
+Change: 0₹
+Transaction successful! Enjoy your Water!
+
+
+case 4:
+
+Input:
+5
+
+Expected Output:
+invalid input!
+
+case 5:
+
+Input:
+1 30
+
+Expected Output:
+Product: Soda- 30₹
+Payment: 30₹
+Change: 0₹
+Transaction successful! Enjoy your Soda!
+
+******************************************************Solution******************************************************************
+
+
+
+Question 1.
+
+#include<stdio.h>
+int main(){
+
+    int n; 
+    float balance = 1000,deposit,withdrawl;
+    scanf("%d",&n);
+
+    switch(n){
+
+        case 1: printf("Current Balance: %.1f",balance); break;
+
+        case 2: scanf("%f",&deposit);
+                balance += deposit;
+                printf("Deposit successful!\n");
+                printf("Updated Balance: %.1f",balance);
+                break;
+        
+        case 3: scanf("%f",&withdrawl);
+                if(withdrawl>balance){
+                    printf("Insufficient funds!");
+                    return 0;
+                }else{
+                    balance -= withdrawl;
+                    printf("Withdrawal successful!\n");
+                    printf("Updated Balance: %.1f",balance);
+                }
+                break;
+
+
+    }
+
+
+    return 0;
+}
+
+Question 2.
+
+
+#include<stdio.h>
+int main(){
+
+    float a,b;
+    char ch;
+
+    scanf("%f %f",&a,&b);
+    scanf(" %c",&ch);
+
+    switch(ch){
+
+        case '+': printf("%.1f + %.1f = %.1f",a,b,(a+b)); break; 
+        case '-': printf("%.1f - %.1f = %.1f",a,b,(a-b)); break; 
+        case '*': printf("%.1f * %.1f = %.1f",a,b,(a*b)); break; 
+        case '/': printf("%.1f / %.1f = %.1f",a,b,(a/b)); 
+        
+
+    }
+
+
+
+    return 0;
+}
+
+
+
+Question 3.
+
+
+#include<stdio.h>
+int main(){
+
+    int product,payment;
+    scanf("%d",&product);
+    scanf("%d",&payment);
+    switch(product){
+
+        case 1: if(payment<30){
+            printf("Insufficient money! Transaction cancelled.");
+            return 0;
+            }else{
+
+            printf("Product: Soda- 30₹\n");
+                printf("Payment: %d₹\n",payment);
+                printf("Change: %d₹\n",payment-30);
+                printf("Transaction successful! Enjoy your Soda!");
+                break;
+        }
+        case 2: if(payment<15){
+            printf("Insufficient money! Transaction cancelled.");
+            return 0;
+            }else{
+
+            printf("Product: Chips - 15₹\n");
+                printf("Payment: %d₹\n",payment);
+                printf("Change: %d₹\n",payment-15);
+                printf("Transaction successful! Enjoy your Chips!");
+                break;
+        }
+        case 3: if(payment<10){
+            printf("Insufficient money! Transaction cancelled.");
+            return 0;
+            }else{
+
+            printf("Product: Candy - 10₹\n");
+                printf("Payment: %d₹\n",payment);
+                printf("Change: %d₹\n",payment-10);
+                printf("Transaction successful! Enjoy your Candy!");
+                break;
+        }
+        case 4: if(payment<20){
+            printf("Insufficient money! Transaction cancelled.");
+            return 0;
+            }else{
+
+            printf("Product: Water - 20₹\n");
+                printf("Payment: %d₹\n",payment);
+                printf("Change: %d₹\n",payment-20);
+                printf("Transaction successful! Enjoy your Water!");
+                break;
+        }
+
+        
+        default : printf("invalid input!");
+
+
+    }
+
+
+    return 0;
+}
