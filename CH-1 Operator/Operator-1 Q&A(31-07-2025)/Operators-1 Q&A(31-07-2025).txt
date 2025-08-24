@@ -254,7 +254,9 @@ _______________________
  I             j
  012131415161710
 
+****************************Solution***************************
 
+Question 1.
 
 
 #include<stdio.h>
@@ -267,6 +269,8 @@ int main(){
     printf("/nThe answer of a%b is : %d",a%b);
     return 0;
 }
+
+Question 2.
 
 
  #include<stdio.h>
@@ -281,6 +285,9 @@ int main(){
     
     return 0;
 }
+
+
+Question 3.
 
 
 #include<stdio.h>
@@ -305,6 +312,8 @@ int main(){
     return 0;
 }
 
+Question 4.
+
 #include<stdio.h>
 int main(){
     
@@ -325,7 +334,7 @@ int main(){
     return 0;
 }
 
-
+Question 5.
 
 #include<stdio.h>
 int main(){
@@ -344,6 +353,8 @@ int main(){
     result = !(a == b);
     printf("The result of !(a == b); is : %d\n",result);
 }
+
+Question 6.
 
 #include<stdio.h>
 int main(){
