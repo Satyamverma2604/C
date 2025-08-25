@@ -281,3 +281,48 @@ Q20.   15). Can you declare variables inside a case block?
 
  d) Yes, without any restrictions
 
+
+
+******************************solution***************************************************
+
+Q1. Range of values for char in switch → b) -128 to 127
+(depends on signed char, most compilers use signed by default)
+
+Q2. FALSE statement → c) Switch can handle string comparisons directly in C
+
+Q3. Keyword to exit case → b) break
+
+Q4. Expressions in case labels → b) No, only constant expressions
+
+Q5. Valid switch → b) switch('A') { case 'A': break; }
+
+Q6. Correct syntax → a) switch(variable) { case value: statements; }
+
+Q7. Variables as case labels? → b) No, only constants are allowed
+
+Q8. Purpose of default → b) It executes when no other case matches
+
+Q9. continue inside switch → c) Compilation error if not inside a loop
+
+Q10. Default case placement → c) Anywhere within the switch block
+
+Q11. goto into switch from outside → b) No, it's not allowed
+
+Q12. Data types allowed → a) int, char
+
+Q13. Duplicate case values → c) Compilation error
+
+Q14. No default + no match → c) Program continues after the switch block
+
+Q15. NOT allowed → c) Float values as case labels
+
+Q16. Max case labels → c) Implementation dependent
+
+Q17. Multiple values for same action → b) case 1: case 2: case 3: printf("Multiple"); break;
+
+Q18. Code output → b) TwoThree
+(because no break, fall-through occurs after case 2)
+
+Q19. No break in case → c) Fall-through to the next case
+
+Q20. Declaring variables inside case → c) Yes, but the case block should be enclosed in braces
