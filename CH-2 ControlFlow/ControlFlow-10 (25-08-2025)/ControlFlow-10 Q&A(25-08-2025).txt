@@ -1,0 +1,493 @@
+Question 1.
+
+Print First N Prime Numbers
+Write a C program to print the first n prime numbers, where n is a positive integer entered by the user.
+
+A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.
+
+The program must not use functions, and must use only for and while loops.
+
+If the input is less than or equal to 0, print:
+"Invalid input. Please enter a positive number."
+
+
+Input Format:
+-=-=--==-=-=-=
+A single integer n, representing how many prime numbers to print.
+
+Output Format:
+-=-=-=-=-=-=-=-
+If input is valid:
+"First n prime numbers are:" followed by the primes on the same line separated by space.
+
+If input is invalid:
+"Invalid input. Please enter a positive number."
+
+Sample Input
+5
+Sample Output
+First 5 prime numbers are:
+2 3 5 7 11
+Constraints:
+1 ≤ n ≤ 10000
+
+TestCases:
+
+case 1:
+
+Input:
+5
+
+Expected Output:
+First 5 prime numbers are:
+2 3 5 7 11
+
+case 2:
+
+Input:
+15
+
+Expected Output:
+First 15 prime numbers are:
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47
+
+case 3:
+
+Input:
+0
+
+Expected Output:
+Invalid input
+
+case 4:
+
+Input:
+-10
+
+Expected Output:
+Invalid input. Please enter a positive number.
+
+
+Question 2.
+
+MultiplicationTableUsingForLoop
+
+Write a program in C to display the multiplication table for a given integer. 
+
+
+
+Test Data :
+
+Input the number (Table to be calculated) : 15
+
+Expected Output :
+
+15 X 1 = 15
+
+...
+
+...
+
+15 X 10 = 150
+Sample Input
+5
+Sample Output
+5 X 1 = 5
+5 X 2 = 10
+5 X 3 = 15
+5 X 4 = 20
+5 X 5 = 25
+5 X 6 = 30
+5 X 7 = 35
+5 X 8 = 40
+5 X 9 = 45
+5 X 10 = 50
+
+
+TestCases:
+
+case 1:
+
+Input:
+1
+
+Expected Output:
+1 X 1 = 1
+1 X 2 = 2
+1 X 3 = 3
+1 X 4 = 4
+1 X 5 = 5
+1 X 6 = 6
+1 X 7 = 7
+1 X 8 = 8
+1 X 9 = 9
+1 X 10 = 10
+
+
+case 2:
+
+Input:
+12
+
+Expected Output:
+12 X 1 = 12
+12 X 2 = 24
+12 X 3 = 36
+12 X 4 = 48
+12 X 5 = 60
+12 X 6 = 72
+12 X 7 = 84
+12 X 8 = 96
+12 X 9 = 108
+12 X 10 = 120
+
+
+case 3:
+
+Input:
+-6
+
+Expected Output:
+Negative value not allowed.
+
+
+
+Question 3.
+
+
+Factorial Calculation
+[Title:- Factorial Calculation] [for-loop]
+------------------------------------------
+
+Write a C program to calculate the factorial of a given positive integer.
+The program should prompt the user to enter a number, compute its factorial, and display the result.
+
+-> If the user enters a negative number, the program should display an error message: "Invalid input. Please enter a positive integer."
+-> If the input is 0, the program should print: "Factorial of 0 = 1," because by definition, 0! = 1.
+
+|-----------------------------------|
+|Formula: n! = 1 × 2 × 3 × ... × n. |
+|-----------------------------------|
+
+Valid Test Cases :-
+-------------------
+Test-Case-1 :-
+--------------
+Input: 5
+Output: Factorial of 5 = 120
+
+Test-Case-2 :-
+---------------
+Input: 3
+Output: Factorial of 3 = 6
+
+Test-Case-3 :-
+---------------
+Input: 0
+Output: Factorial of 0 = 1
+
+Invalid Test Cases :-
+---------------------
+Test-Case-4 :- (Negative Input)
+-------------------------------
+Input: -4
+Output: Invalid input. Please enter a positive integer.
+
+Sample Input
+3
+Sample Output
+Factorial of 3 = 6
+
+
+Question 4.
+
+FindCube
+Write a program in C to display the cube of the number up to an integer.
+
+
+
+Test Data :
+
+Input number of terms : 5
+
+Expected Output :
+
+Number is : 1 and cube of the 1 is :1
+
+Number is : 2 and cube of the 2 is :8
+
+Number is : 3 and cube of the 3 is :27
+
+Number is : 4 and cube of the 4 is :64
+
+Number is : 5 and cube of the 5 is :125
+Sample Input
+3
+Sample Output
+Number is : 1 and cube of the 1 is :1
+Number is : 2 and cube of the 2 is :8
+Number is : 3 and cube of the 3 is :27
+
+TestCases:
+
+case 1: 
+
+Input:
+3
+
+Expected Output:
+Number is : 1 and cube of the 1 is :1
+Number is : 2 and cube of the 2 is :8
+Number is : 3 and cube of the 3 is :27
+
+case 2:
+
+Input:
+1
+
+Expected Output:
+Number is : 1 and cube of the 1 is :1
+
+
+case 3:
+
+Input:
+5
+
+Expected Output:
+Number is : 1 and cube of the 1 is :1
+Number is : 2 and cube of the 2 is :8
+Number is : 3 and cube of the 3 is :27
+Number is : 4 and cube of the 4 is :64
+Number is : 5 and cube of the 5 is :125
+
+case 4:
+
+Input:
+-7
+
+Expected Output:
+Negative value not allowed.
+
+
+
+Question 5.
+
+Prime Number
+[Title:- Prime Number Check]
+----------------------------
+
+(USING FOR LOOP)
+Write a C program to check whether a given number is a prime number or not.
+
+Test-Cases-1 :- Valid Prime Number
+---------------
+Input :-
+--------
+Enter a number: 7
+
+Expected Output :-
+-------------------
+7 is a prime number.
+
+Explanation :- 7 is divisible only by 1 and itself, making it a prime number.
+--------------
+
+Test-Cases-2 :- Invalid (Non-Prime) Number
+---------------
+Input :-
+---------
+Enter a number: 10
+
+Expected Output :-
+------------------
+10 is not a prime number.
+
+Explanation :- 10 is divisible by 1, 2, 5, and 10, so it is not a prime number.
+--------------
+
+Test-Cases-3 :- Invalid Input (Negative Number)
+---------------
+Input :-
+--------
+Enter a number: -5/0
+
+Expected Output :-
+------------------
+Invalid input. Enter a positive integer.
+Sample Input
+7
+Sample Output
+7 is a prime number.
+
+TestCases:
+
+case 1:
+
+Input:
+5
+
+Expected Output:
+5 is a prime number.
+
+case 2:
+
+Input:
+10
+
+Expected Output:
+10 is not a prime number.
+
+case 3: 
+
+Input:
+-5
+
+Expected Output:
+Invalid input. Enter a positive integer.
+
+
+*************************************************Solutions*****************************************************
+
+Question 1.
+
+#include<stdio.h>
+int main(){
+
+    int n,count=0,Count=0;
+    scanf("%d",&n);
+     
+     if(n==0){
+        printf("Invalid input");
+     }else if(n<0){
+        printf("Invalid input. Please enter a positive number.");
+     }else{
+
+        printf("First %d prime numbers are:\n",n);
+
+        for(int i = 2; n != Count; i++){
+
+
+            for(int j = 2; j<i;j++){
+                count =0;
+
+                if(i%j==0){
+                    count++;
+                    break;
+                }
+
+            }
+            if(count==0){
+                printf("%d ",i);
+                Count++;
+            }
+
+
+        }
+
+
+     }
+
+
+
+    return 0;
+}
+
+
+Question 2.
+
+
+#include<stdio.h>
+int main(){
+
+    int n;
+    scanf("%d",&n);
+    if(n<0){
+        printf("Negative value not allowed.");
+        return 0;
+    }
+    for(int i=1; i<=10; i++){
+
+        printf("%d X %d = %d\n",n,i,n*i);
+
+    }
+
+
+    return 0;
+}
+
+
+Question 3.
+
+
+#include<stdio.h>
+int main(){
+
+    int n,fact=1;
+    scanf("%d",&n);
+    if(n<0){
+        printf("Invalid input Please enter a positive integer.");
+        return 0;
+    }
+    printf("Factorial of %d = ",n);
+    for(int i=1; i<=n; i++){
+        fact=fact*i;
+    }
+    printf("%d",fact);
+
+
+    return 0;
+}
+
+Question 4.
+
+#include<stdio.h>
+int main(){
+
+    int n;
+    scanf("%d",&n);
+     
+    if(n<0){
+        printf("Negative value not allowed.");
+     }else{
+
+        for(int i = 1; i<=n; i++){
+
+           printf("Number is : %d and cube of the %d is :%d\n",i,i,(i*i*i));
+        }
+
+     }
+
+    return 0;
+}
+
+Question 5.
+
+#include<stdio.h>
+int main(){
+
+    int n,count=0;
+    scanf("%d",&n);
+     
+    if(n<=0){
+        printf("Invalid input. Enter a positive integer.");
+     }else{
+
+        for(int i = 2; i<n ; i++){
+
+                if(n%i==0){
+                    printf("%d is not a prime number.",n);
+                    exit(0);
+                }
+
+
+        }
+        printf("%d is a prime number.",n);
+
+
+     }
+
+
+
+    return 0;
+}
