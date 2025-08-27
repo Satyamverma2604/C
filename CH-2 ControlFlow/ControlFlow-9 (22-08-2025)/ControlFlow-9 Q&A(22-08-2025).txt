@@ -182,3 +182,58 @@ int main(){
  
     return 0;
 }
+
+
+Question 4.
+
+
+#include<stdio.h>
+int main(){
+
+int n,sum =0;
+do{
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    if(n<0) break;
+    sum+=n;
+}while(n>0);
+
+printf("The sum is : %d",sum);
+
+    return 0;
+}
+
+
+
+Question 5.
+
+
+#include<stdio.h>
+int  main(){
+
+    int n,start = 1;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    printf("Odd numbers up to %d: \n",n);
+
+    do{
+        if(start % 2 ==1){
+
+            printf("%d ",start);
+
+        }
+        start++;
+        
+        
+    }while(start!=n);
+
+
+    return 0;
+}
+
+
+
+Question 6.
+
+
+
