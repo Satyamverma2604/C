@@ -424,3 +424,57 @@ Intermediate:
 
 Question 1.
 
+#include<stdio.h>
+int main(){
+
+    int n,even=0,odd=0,lastD;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+
+    while (n>0)
+    {
+        lastD = n%10;
+
+        if(lastD % 2 == 0){
+            even += lastD;
+        }else
+        odd += lastD;
+        n/=10;
+
+    }
+    
+    printf("Sum of Even Digits : %d\n",even);
+    printf("Sum of Odd Digits : %d\n",odd);
+    return 0;
+}
+
+
+
+Question 2.
+
+
+#include<stdio.h>
+int main(){
+
+    int n,facto = 1,start=1;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+
+    while (start<=n)
+    {
+       facto*=start;
+       start++;
+    }
+    
+    printf("The factorial of %d is : %d",n,facto);
+    
+    return 0;
+}
+
+
+
+Question 3.
+
+
+
+
