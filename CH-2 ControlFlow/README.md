@@ -1,4 +1,4 @@
-# 📌 Conditional Statements – C Programming
+#  Conditional Statements – C Programming
 
 This repository/folder contains **comprehensive resources** for mastering **Conditional Statements** in C programming.  
 It includes **theory notes**, **practice questions with answers**, **MCQs**, and **tests** to help beginners and intermediate learners strengthen their fundamentals.
